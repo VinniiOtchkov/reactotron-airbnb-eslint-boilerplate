@@ -2,10 +2,10 @@
 
 To get started:
 ```
-git clone https://github.com/johnazre/react-redux-todo-starter.git
-cd react-redux-todo-starter
+git clone https://github.com/johnazre/reactotron-reactjs-starter.git
+cd reactotron-reactjs-starter
 npm install
 npm start
 ```
 
-There is one test currently failing in the App component, which should have been fixed by exporting the App component separately from the "connected" exported component. If you can fix that, send a PR.
+THEN download Reactotron via direct download from this link: [https://github.com/johnazre/reactotron-reactjs-starter](https://github.com/johnazre/reactotron-reactjs-starter)
