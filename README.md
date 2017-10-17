@@ -1,5 +1,3 @@
-# Create-React-App Todo List with Redux-Form and Redux-Promise-Middleware
-
 Extended from: https://github.com/johnazre/reactotron-reactjs-starter.git
 
 To get started:
