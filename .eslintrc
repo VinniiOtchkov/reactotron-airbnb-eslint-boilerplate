@@ -11,5 +11,5 @@
       "react/prop-types": "off",
       "react/jsx-filename-extension": "off",
       "react/jsx-first-prop-new-line": [ "error", "never" ]
-    }
+      }
 }

@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form'
-import { addNewPost } from '../actions/posts'
+import * as postActions from '../actions/posts';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 class PostInput extends Component {
 
-  addNewPost = (post) => {
-    this.props.addNewPost(post)
+  addPost = (post) => {
+    this.props.actions.addPost(post)
   }
 
   render () {
     return (
-      <form onSubmit={this.props.handleSubmit(this.addNewPost)}>
+      <form onSubmit={this.props.handleSubmit(this.addPost)}>
         <p>
           Title: <Field name="title" component="input" type="text" />
         </p>
         <p>
-          Body: <Field name="body" component="textarea" type="text" />
+          Description: <Field name="description" component="textarea" type="text" />
         </p>
         <button type="submit">Submit</button>
       </form>
@@ -32,7 +32,7 @@ PostInput = reduxForm({
 
 function mapDispatchToProps(dispatch) {
   return {
-    addNewPost: bindActionCreators(addNewPost, dispatch)
+    actions: bindActionCreators(postActions, dispatch)
   }
 }
 
