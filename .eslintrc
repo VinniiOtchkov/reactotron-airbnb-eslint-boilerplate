@@ -1,0 +1,15 @@
+{
+    "extends": "airbnb",
+    "rules": {
+      "comma-dangle": [ "error", "never" ],
+      "consistent-return": "off",
+      "import/no-named-as-default": "off",
+      "import/no-named-as-default-member": "off",
+      "no-plusplus": "off",
+      "no-console": "off",
+      "react/require-default-props": "off",
+      "react/prop-types": "off",
+      "react/jsx-filename-extension": "off",
+      "react/jsx-first-prop-new-line": [ "error", "never" ]
+    }
+}

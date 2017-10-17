@@ -3,8 +3,8 @@ export default(state = [], action) => {
     case 'GET_ALL_POSTS_FULFILLED':
       return [...action.payload];
     case 'ADD_NEW_POST':
-      return [...state, action.payload]
+      return [...state, action.payload];
     default:
       return state;
   }
-}
+};

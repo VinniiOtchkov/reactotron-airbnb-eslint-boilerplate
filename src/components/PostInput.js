@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 class PostInput extends Component {
+
   addNewPost = (post) => {
     this.props.addNewPost(post)
   }
