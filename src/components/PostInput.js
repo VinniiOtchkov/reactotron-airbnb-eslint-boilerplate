@@ -17,7 +17,7 @@ class PostInput extends Component {
           Title: <Field name="title" component="input" type="text" />
         </p>
         <p>
-          Description: <Field name="description" component="textarea" type="text" />
+          Description: <Field name="body" component="textarea" type="text" />
         </p>
         <button type="submit">Submit</button>
       </form>
