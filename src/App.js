@@ -16,7 +16,7 @@ export class App extends Component {
         <li style={{ border: '1px solid black' }}>
           <p>ID: {post.id}</p>
           <p>Title: {post.title}</p>
-          <p>description: {post.description}</p>
+          <p>description: {post.body}</p>
         </li>
       </ul>
     ));
