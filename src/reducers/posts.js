@@ -14,17 +14,17 @@ export default(state = initialState, action) => {
       console.log('Request Failed');
       return state;
 
-    case 'ADD':
-      return [...state.action.payload];
+    case 'ADD_PENDING':
+      return state;
 
     case 'ADD_FULFILLED':
       console.log('Add Fulfilled');
-      return [...action.payload.data];
+      return [...state, action.payload.data];
 
     case 'ADD_REJECTED':
       console.log('Add Rejected');
       return state;
-      
+
     default:
       return state;
   }
