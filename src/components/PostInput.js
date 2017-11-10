@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Field, reduxForm } from 'redux-form'
+import { Field, reduxForm } from 'redux-form';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import * as postActions from '../actions/posts';
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 
 class PostInput extends Component {
 
@@ -10,7 +10,7 @@ class PostInput extends Component {
     this.props.actions.addPost(post)
   }
 
-  render () {
+  render() {
     return (
       <form onSubmit={this.props.handleSubmit(this.addPost)}>
         <p>
@@ -21,7 +21,7 @@ class PostInput extends Component {
         </p>
         <button type="submit">Submit</button>
       </form>
-    )
+    );
   }
 }
 
@@ -33,7 +33,7 @@ PostInput = reduxForm({
 function mapDispatchToProps(dispatch) {
   return {
     actions: bindActionCreators(postActions, dispatch)
-  }
+  };
 }
 
 export default connect(null, mapDispatchToProps)(PostInput);
